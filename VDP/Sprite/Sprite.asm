@@ -13,8 +13,8 @@ macro seek(variable offset) {
 
 // BANK 0..7 (128KB)
 seek($0000); fill $20000 // Fill Bank 0..7 With Zero Bytes
-include "LIB\GG_HEADER.ASM" // Include GG Header
-include "LIB\GG_VDP.ASM" // Include VDP Macros
+include "LIB/GG_HEADER.ASM" // Include GG Header
+include "LIB/GG_VDP.ASM" // Include VDP Macros
 
 seek($0000)
 di // Disable Interrupts
